@@ -1,0 +1,124 @@
+@media (max-width:768px){
+  html,body{
+    
+  }
+  .wrapper{
+    width: 100%;
+  }
+  .inner{
+    min-width: 100%;
+    margin: 0 auto;
+  }
+  /* header */
+  header>p{
+    font-size: 1em;
+  }
+  nav ul{
+    display: none;
+  }
+  .login{
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+  }
+  .login a{
+    padding: .5em 1em;
+    border-radius: .5em;
+    margin-right: 2em;
+    font-size: 1.2em;
+    font-weight: 500;
+    background-color: white;
+  }
+  .hamburger{
+    display: block;
+    cursor: pointer;
+  }
+  .respon_menu{
+    top: 0;
+    min-height: 700px;
+  }
+  /* main */
+  main{
+    padding: 0em .5em;
+  }
+  main h2{
+    grid-column: span 12;
+    text-align: center;
+    font-size: 2em;
+    padding: 1em 0;
+  }
+  main select{
+    grid-column: span 12;
+    padding: .7em 0;
+    font-weight: 300;
+    font-family: 'Gothic A1', sans-serif;
+  }
+  main select option{
+    font-size: 1.5em;
+  }
+  main input{
+    border: 1px solid black;
+    grid-column: span 12;
+    padding: .7em 0;
+  }
+  main>button{
+    grid-column: span 12;
+    padding: .7em 0;
+  }
+  main.grid div:nth-of-type(2){
+    border-top: 2px solid black;
+  }
+  .title_name{
+    display: none;
+  }
+  .content_box{
+    text-align: left;
+    border-bottom: 1px solid gray;
+    padding: .5em;
+  }
+  .content_box span{
+    grid-column: span 12;
+  }
+  .content_box p:nth-of-type(1){
+    grid-column: span 11;
+  }
+  .content_box p:nth-of-type(2){
+    display: none;
+  }
+  .content_box p:nth-of-type(3){
+    grid-column: span 12;
+  }
+  .content_box i{
+    font-size: 25px;
+  }
+  .color{
+    width: 45px;
+    text-align: center;
+    justify-self: start;
+  }
+  /* footer */
+.footer_right{
+  grid-template-columns: repeat(3, 1fr);
+}
+}
+/* hover */
+@media (min-width:769px){
+  .textbox:hover{
+    opacity: .7;
+    cursor: pointer;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  .footer_right div h3 a:hover{
+  text-decoration: none;
+  }
+  .login a:hover{
+    text-decoration: underline;
+    box-shadow: 0 0 5px rgba(0,0,0,.8);
+  }
+  .footer_but button:hover{
+    background-color: black;
+    opacity: .5;
+  }
+}
